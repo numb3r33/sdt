@@ -6,8 +6,8 @@ title: SDT
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "This package is an implementation of the paper [Distilling a Neural Network Into a Soft Decision"
-description: "This package is an implementation of the paper [Distilling a Neural Network Into a Soft Decision"
+
+
 nb_path: "index.ipynb"
 ---
 <!--
@@ -29,39 +29,22 @@ nb_path: "index.ipynb"
 </div>
     {% endraw %}
 
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">IN_COLAB</span><span class="p">:</span>
-  <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-  <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&#34;/content/drive&#34;, force_remount=True).
-</pre>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Abstract</strong>
+Deep neural networks have proved to be a very effective
+way to perform classification tasks. But it is hard to explain why a learned network makes
+a particular classification decision on a particular test case. This is
+due to their reliance on distributed hierarchical representations. If we
+could take the knowledge acquired by the neural net and express the
+same knowledge in a model that relies on hierarchical decisions instead,
+explaining a particular decision would be much easier. We describe a way
+of using a trained neural net to create a type of soft decision tree that
+generalizes better than one learned directly from the training data.</p>
 
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>

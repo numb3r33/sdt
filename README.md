@@ -1,16 +1,17 @@
 # SDT
-> This package is an implementation of the paper [Distilling a Neural Network Into a Soft Decision
 
 
-```
-# ignore
-if IN_COLAB:
-  from google.colab import drive
-  drive.mount('/content/drive')
-```
 
-    Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
-
+**Abstract**
+Deep neural networks have proved to be a very effective
+way to perform classification tasks. But it is hard to explain why a learned network makes
+a particular classification decision on a particular test case. This is
+due to their reliance on distributed hierarchical representations. If we
+could take the knowledge acquired by the neural net and express the
+same knowledge in a model that relies on hierarchical decisions instead,
+explaining a particular decision would be much easier. We describe a way
+of using a trained neural net to create a type of soft decision tree that
+generalizes better than one learned directly from the training data.
 
 ## Install
 

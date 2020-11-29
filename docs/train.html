@@ -32,39 +32,6 @@ nb_path: "03_train.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">IN_COLAB</span><span class="p">:</span>
-  <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-  <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&#34;/content/drive&#34;, force_remount=True).
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
 
 </div>
     {% endraw %}
@@ -699,7 +666,10 @@ nb_path: "03_train.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>converting: /content/drive/My Drive/Colab Notebooks/github/sdt/01_model.ipynb
+<pre>converting: /content/drive/My Drive/Colab Notebooks/github/sdt/index.ipynb
+converting: /content/drive/My Drive/Colab Notebooks/github/sdt/02_loss.ipynb
+converting: /content/drive/My Drive/Colab Notebooks/github/sdt/01_model.ipynb
+converting: /content/drive/My Drive/Colab Notebooks/github/sdt/00_data.ipynb
 converting: /content/drive/My Drive/Colab Notebooks/github/sdt/03_train.ipynb
 converting /content/drive/My Drive/Colab Notebooks/github/sdt/index.ipynb to README.md
 </pre>
@@ -782,35 +752,27 @@ All tests are passing!
 Your branch is up to date with &#39;origin/main&#39;.
 
 Changes not staged for commit:
-  (use &#34;git add/rm &lt;file&gt;...&#34; to update what will be committed)
+  (use &#34;git add &lt;file&gt;...&#34; to update what will be committed)
   (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory)
 
-	<span class="ansi-red-fg">deleted:    00_core.ipynb</span>
 	<span class="ansi-red-fg">modified:   README.md</span>
 	<span class="ansi-red-fg">modified:   docs/_data/sidebars/home_sidebar.yml</span>
-	<span class="ansi-red-fg">modified:   docs/_includes/footer.html</span>
-	<span class="ansi-red-fg">modified:   docs/css/bootstrap.min.css</span>
-	<span class="ansi-red-fg">modified:   docs/css/modern-business.css</span>
-	<span class="ansi-red-fg">modified:   docs/js/jquery.navgoco.min.js</span>
+	<span class="ansi-red-fg">modified:   docs/data.html</span>
+	<span class="ansi-red-fg">modified:   docs/index.html</span>
+	<span class="ansi-red-fg">modified:   docs/loss.html</span>
+	<span class="ansi-red-fg">modified:   docs/model.html</span>
 	<span class="ansi-red-fg">modified:   docs/sidebar.json</span>
+	<span class="ansi-red-fg">modified:   docs/train.html</span>
 	<span class="ansi-red-fg">modified:   index.ipynb</span>
-	<span class="ansi-red-fg">modified:   settings.ini</span>
 
 Untracked files:
   (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
 
-	<span class="ansi-red-fg">00_data.ipynb</span>
-	<span class="ansi-red-fg">01_model.ipynb</span>
-	<span class="ansi-red-fg">02_loss.ipynb</span>
-	<span class="ansi-red-fg">03_train.ipynb</span>
-	<span class="ansi-red-fg">docs/data.html</span>
-	<span class="ansi-red-fg">docs/index.html</span>
-	<span class="ansi-red-fg">docs/loss.html</span>
-	<span class="ansi-red-fg">docs/model.html</span>
-	<span class="ansi-red-fg">docs/train.html</span>
+	<span class="ansi-red-fg">docs/images/learned_filters.png</span>
+	<span class="ansi-red-fg">docs/images/loss.png</span>
+	<span class="ansi-red-fg">docs/images/regularizer.png</span>
+	<span class="ansi-red-fg">docs/images/training_loop.png</span>
 	<span class="ansi-red-fg">export.pkl</span>
-	<span class="ansi-red-fg">images/</span>
-	<span class="ansi-red-fg">sdt/</span>
 
 no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;)
 </pre>
@@ -830,7 +792,46 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add *.ipynb README.md docs/ <span class="p">;</span> git config --global user.email <span class="s1">&#39;abhicoders@gmail.com&#39;</span><span class="p">;</span> git config --global user.name <span class="s1">&#39;numb3r33&#39;</span><span class="p">;</span> git commit -m <span class="s1">&#39;Split cells.&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add README.md docs/ index.ipynb<span class="p">;</span> git config --global user.email <span class="s1">&#39;abhicoders@gmail.com&#39;</span><span class="p">;</span> git config --global user.name <span class="s1">&#39;numb3r33&#39;</span><span class="p">;</span> git commit -m <span class="s1">&#39;push docs&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[main e4b5c90] push docs
+ 13 files changed, 298 insertions(+), 331 deletions(-)
+ rewrite README.md (82%)
+ create mode 100644 docs/images/learned_filters.png
+ create mode 100644 docs/images/loss.png
+ create mode 100644 docs/images/regularizer.png
+ create mode 100644 docs/images/training_loop.png
+ rewrite index.ipynb (100%)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.cli</span> <span class="kn">import</span> <span class="n">nbdev_clean_nbs</span>
+<span class="n">nbdev_clean_nbs</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -847,10 +848,49 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>rm exp
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.cli</span> <span class="kn">import</span> <span class="n">nbdev_install_git_hooks</span>
+<span class="n">nbdev</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git push origin main
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Counting objects: 15, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 5.27 KiB | 675.00 KiB/s, done.
+Total 15 (delta 12), reused 0 (delta 0)
+remote: Resolving deltas: 100% (12/12), completed with 11 local objects.
+To https://github.com/numb3r33/sdt
+   57d78d1..e4b5c90  main -&gt; main
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
