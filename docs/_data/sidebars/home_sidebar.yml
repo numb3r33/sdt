@@ -7,24 +7,21 @@ entries:
 - folders:
   - folderitems:
     - output: web,pdf
-      title: Export to modules
-      url: /export.html
+      title: Overview
+      url: /
     - output: web,pdf
-      title: Convert to html
-      url: /export2html.html
+      title: Data Utilities ( MNIST )
+      url: data.html
     - output: web,pdf
-      title: Show doc
-      url: /showdoc.html
+      title: SDT
+      url: model.html
     - output: web,pdf
-      title: Test functions
-      url: /test.html
+      title: Title
+      url: loss.html
     - output: web,pdf
-      title: Core functions
-      url: /core.html
-    - output: web,pdf
-      title: Command line functions
-      url: /cli.html
+      title: Training Loop
+      url: train.html
     output: web
-    title: Notebook
+    title: sdt
   output: web
   title: Sidebar

@@ -1,10 +1,9 @@
 {
-  "Notebook": {
-    "Export to modules": "/export",
-    "Convert to html": "/export2html",
-    "Show doc": "/showdoc",
-    "Test functions": "/test",
-    "Core functions": "/core",
-    "Command line functions": "/cli"
+  "sdt": {
+    "Overview": "/",
+    "Data Utilities ( MNIST )": "data.html",
+    "SDT": "model.html",
+    "Title": "loss.html",
+    "Training Loop": "train.html"
   }
 }
