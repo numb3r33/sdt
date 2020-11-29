@@ -755,23 +755,20 @@ Changes not staged for commit:
   (use &#34;git add &lt;file&gt;...&#34; to update what will be committed)
   (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory)
 
+	<span class="ansi-red-fg">modified:   00_data.ipynb</span>
+	<span class="ansi-red-fg">modified:   01_model.ipynb</span>
+	<span class="ansi-red-fg">modified:   02_loss.ipynb</span>
+	<span class="ansi-red-fg">modified:   03_train.ipynb</span>
 	<span class="ansi-red-fg">modified:   README.md</span>
-	<span class="ansi-red-fg">modified:   docs/_data/sidebars/home_sidebar.yml</span>
-	<span class="ansi-red-fg">modified:   docs/data.html</span>
 	<span class="ansi-red-fg">modified:   docs/index.html</span>
 	<span class="ansi-red-fg">modified:   docs/loss.html</span>
 	<span class="ansi-red-fg">modified:   docs/model.html</span>
-	<span class="ansi-red-fg">modified:   docs/sidebar.json</span>
 	<span class="ansi-red-fg">modified:   docs/train.html</span>
 	<span class="ansi-red-fg">modified:   index.ipynb</span>
 
 Untracked files:
   (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
 
-	<span class="ansi-red-fg">docs/images/learned_filters.png</span>
-	<span class="ansi-red-fg">docs/images/loss.png</span>
-	<span class="ansi-red-fg">docs/images/regularizer.png</span>
-	<span class="ansi-red-fg">docs/images/training_loop.png</span>
 	<span class="ansi-red-fg">export.pkl</span>
 
 no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;)
@@ -792,7 +789,7 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add README.md docs/ index.ipynb<span class="p">;</span> git config --global user.email <span class="s1">&#39;abhicoders@gmail.com&#39;</span><span class="p">;</span> git config --global user.name <span class="s1">&#39;numb3r33&#39;</span><span class="p">;</span> git commit -m <span class="s1">&#39;push docs&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add *.ipynb README.md docs/<span class="p">;</span> git config --global user.email <span class="s1">&#39;abhicoders@gmail.com&#39;</span><span class="p">;</span> git config --global user.name <span class="s1">&#39;numb3r33&#39;</span><span class="p">;</span> git commit -m <span class="s1">&#39;update readme and install githooks.&#39;</span>
 </pre></div>
 
     </div>
@@ -805,13 +802,8 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[main e4b5c90] push docs
- 13 files changed, 298 insertions(+), 331 deletions(-)
- rewrite README.md (82%)
- create mode 100644 docs/images/learned_filters.png
- create mode 100644 docs/images/loss.png
- create mode 100644 docs/images/regularizer.png
- create mode 100644 docs/images/training_loop.png
+<pre>[main 6da724a] update readme and install githooks.
+ 9 files changed, 449 insertions(+), 237 deletions(-)
  rewrite index.ipynb (100%)
 </pre>
 </div>
@@ -849,10 +841,25 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.cli</span> <span class="kn">import</span> <span class="n">nbdev_install_git_hooks</span>
-<span class="n">nbdev</span>
+<span class="n">nbdev_install_git_hooks</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Executing: git config --local include.path ../.gitconfig
+Success: hooks are installed and repo&#39;s .gitconfig is now trusted
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -879,14 +886,14 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Counting objects: 15, done.
+<pre>Counting objects: 12, done.
 Delta compression using up to 2 threads.
-Compressing objects: 100% (14/14), done.
-Writing objects: 100% (15/15), 5.27 KiB | 675.00 KiB/s, done.
-Total 15 (delta 12), reused 0 (delta 0)
-remote: Resolving deltas: 100% (12/12), completed with 11 local objects.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 5.17 KiB | 529.00 KiB/s, done.
+Total 12 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas: 100% (10/10), completed with 10 local objects.
 To https://github.com/numb3r33/sdt
-   57d78d1..e4b5c90  main -&gt; main
+   e4b5c90..6da724a  main -&gt; main
 </pre>
 </div>
 </div>
