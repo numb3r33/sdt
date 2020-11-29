@@ -16,7 +16,7 @@ entries:
       title: SDT
       url: model.html
     - output: web,pdf
-      title: Title
+      title: Soft Decision Tree Loss
       url: loss.html
     - output: web,pdf
       title: Training Loop

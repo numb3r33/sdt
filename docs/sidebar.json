@@ -3,7 +3,7 @@
     "Overview": "/",
     "Data Utilities ( MNIST )": "data.html",
     "SDT": "model.html",
-    "Title": "loss.html",
+    "Soft Decision Tree Loss": "loss.html",
     "Training Loop": "train.html"
   }
 }

@@ -1,6 +1,6 @@
 ---
 
-title: Title
+title: Soft Decision Tree Loss
 
 
 keywords: fastai
@@ -31,7 +31,35 @@ nb_path: "02_loss.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Soft-Decision-Tree-Loss">Soft Decision Tree Loss<a class="anchor-link" href="#Soft-Decision-Tree-Loss"> </a></h2>
+<p><img src="/sdt/images/loss.png" alt="loss"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Regularizer">Regularizer<a class="anchor-link" href="#Regularizer"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To avoid getting stuck at poor solutions during the training, authors introduced a
+penalty term that encouraged each internal node to make equal use of both
+left and right sub-trees. Without this penalty, the tree tended to get stuck on
+plateaus in which one or more of the internal nodes always assigned almost all
+the probability to one of its sub-trees and the gradient of the logistic for this
+decision was always very close to zero. The penalty is the cross entropy between
+the desired average distribution 0.5, 0.5 for the two sub-trees and the actual
+average distribution $\alpha$,(1 − $\alpha$) where $\alpha$ for node i is given by</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/sdt/images/regularizer.png" alt="regularizer"></p>
+
 </div>
 </div>
 </div>

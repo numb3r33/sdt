@@ -51,7 +51,7 @@ nb_path: "03_train.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Mounted at /content/drive
+<pre>Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(&#34;/content/drive&#34;, force_remount=True).
 </pre>
 </div>
 </div>
@@ -699,12 +699,8 @@ nb_path: "03_train.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>converting: /content/drive/My Drive/Colab Notebooks/github/sdt/index.ipynb
-converting: /content/drive/My Drive/Colab Notebooks/github/sdt/02_loss.ipynb
-converting: /content/drive/My Drive/Colab Notebooks/github/sdt/01_model.ipynb
-converting: /content/drive/My Drive/Colab Notebooks/github/sdt/00_data.ipynb
+<pre>converting: /content/drive/My Drive/Colab Notebooks/github/sdt/01_model.ipynb
 converting: /content/drive/My Drive/Colab Notebooks/github/sdt/03_train.ipynb
-Warning: Some of your Notebooks use the same title ([&#39;Data&#39;, &#39;Title&#39;, &#39;Title&#39;, &#39;Title&#39;]).
 converting /content/drive/My Drive/Colab Notebooks/github/sdt/index.ipynb to README.md
 </pre>
 </div>
@@ -751,65 +747,110 @@ testing /content/drive/My Drive/Colab Notebooks/github/sdt/01_model.ipynb
 testing /content/drive/My Drive/Colab Notebooks/github/sdt/02_loss.ipynb
 testing /content/drive/My Drive/Colab Notebooks/github/sdt/03_train.ipynb
 testing /content/drive/My Drive/Colab Notebooks/github/sdt/index.ipynb
-Error in /content/drive/My Drive/Colab Notebooks/github/sdt/index.ipynb:
-An error occurred while executing the following cell:
-------------------
-#hide
-from your_lib.core import *
-------------------
-
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-1-b21722cad84c&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg">#hide</span>
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> your_lib<span class="ansi-blue-fg">.</span>core <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;your_lib&#39;
-
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span><span class="ansi-green-fg">
-NOTE: If your import is failing due to a missing package, you can
-manually install dependencies using either !pip or !apt.
-
-To view examples of installing some common dependencies, click the
-&#34;Open Examples&#34; button below.
-</span><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-
-ModuleNotFoundError: No module named &#39;your_lib&#39;
-
+All tests are passing!
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git status
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">Exception</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-21-03c39513334f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg">#ignore</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">from</span> nbdev<span class="ansi-blue-fg">.</span>cli <span class="ansi-green-fg">import</span> nbdev_test_nbs
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>nbdev_test_nbs<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>On branch main
+Your branch is up to date with &#39;origin/main&#39;.
 
-<span class="ansi-green-fg">/usr/local/lib/python3.6/dist-packages/fastcore/script.py</span> in <span class="ansi-cyan-fg">_f</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">     94</span>     <span class="ansi-green-fg">def</span> _f<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">     95</span>         mod <span class="ansi-blue-fg">=</span> inspect<span class="ansi-blue-fg">.</span>getmodule<span class="ansi-blue-fg">(</span>inspect<span class="ansi-blue-fg">.</span>currentframe<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>f_back<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 96</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> mod<span class="ansi-blue-fg">:</span> <span class="ansi-green-fg">return</span> func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     97</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> SCRIPT_INFO<span class="ansi-blue-fg">.</span>func <span class="ansi-green-fg">and</span> mod<span class="ansi-blue-fg">.</span>__name__<span class="ansi-blue-fg">==</span><span class="ansi-blue-fg">&#34;__main__&#34;</span><span class="ansi-blue-fg">:</span> SCRIPT_INFO<span class="ansi-blue-fg">.</span>func <span class="ansi-blue-fg">=</span> func<span class="ansi-blue-fg">.</span>__name__
-<span class="ansi-green-intense-fg ansi-bold">     98</span>         <span class="ansi-green-fg">if</span> len<span class="ansi-blue-fg">(</span>sys<span class="ansi-blue-fg">.</span>argv<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">&gt;</span><span class="ansi-cyan-fg">1</span> <span class="ansi-green-fg">and</span> sys<span class="ansi-blue-fg">.</span>argv<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">==</span><span class="ansi-blue-fg">&#39;&#39;</span><span class="ansi-blue-fg">:</span> sys<span class="ansi-blue-fg">.</span>argv<span class="ansi-blue-fg">.</span>pop<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
+Changes not staged for commit:
+  (use &#34;git add/rm &lt;file&gt;...&#34; to update what will be committed)
+  (use &#34;git checkout -- &lt;file&gt;...&#34; to discard changes in working directory)
 
-<span class="ansi-green-fg">/usr/local/lib/python3.6/dist-packages/nbdev/test.py</span> in <span class="ansi-cyan-fg">nbdev_test_nbs</span><span class="ansi-blue-fg">(fname, flags, n_workers, verbose, timing, pause)</span>
-<span class="ansi-green-intense-fg ansi-bold">    119</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    120</span>         msg <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#34;The following notebooks failed:\n&#34;</span>
-<span class="ansi-green-fg">--&gt; 121</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> Exception<span class="ansi-blue-fg">(</span>msg <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">&#39;\n&#39;</span><span class="ansi-blue-fg">.</span>join<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span>f<span class="ansi-blue-fg">.</span>name <span class="ansi-green-fg">for</span> p<span class="ansi-blue-fg">,</span>f <span class="ansi-green-fg">in</span> zip<span class="ansi-blue-fg">(</span>passed<span class="ansi-blue-fg">,</span>files<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> p<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    122</span>     <span class="ansi-green-fg">if</span> timing<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    123</span>         <span class="ansi-green-fg">for</span> i<span class="ansi-blue-fg">,</span>t <span class="ansi-green-fg">in</span> sorted<span class="ansi-blue-fg">(</span>enumerate<span class="ansi-blue-fg">(</span>times<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> key<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">lambda</span> o<span class="ansi-blue-fg">:</span>o<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> reverse<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+	<span class="ansi-red-fg">deleted:    00_core.ipynb</span>
+	<span class="ansi-red-fg">modified:   README.md</span>
+	<span class="ansi-red-fg">modified:   docs/_data/sidebars/home_sidebar.yml</span>
+	<span class="ansi-red-fg">modified:   docs/_includes/footer.html</span>
+	<span class="ansi-red-fg">modified:   docs/css/bootstrap.min.css</span>
+	<span class="ansi-red-fg">modified:   docs/css/modern-business.css</span>
+	<span class="ansi-red-fg">modified:   docs/js/jquery.navgoco.min.js</span>
+	<span class="ansi-red-fg">modified:   docs/sidebar.json</span>
+	<span class="ansi-red-fg">modified:   index.ipynb</span>
+	<span class="ansi-red-fg">modified:   settings.ini</span>
 
-<span class="ansi-red-fg">Exception</span>: The following notebooks failed:
-index.ipynb</pre>
+Untracked files:
+  (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed)
+
+	<span class="ansi-red-fg">00_data.ipynb</span>
+	<span class="ansi-red-fg">01_model.ipynb</span>
+	<span class="ansi-red-fg">02_loss.ipynb</span>
+	<span class="ansi-red-fg">03_train.ipynb</span>
+	<span class="ansi-red-fg">docs/data.html</span>
+	<span class="ansi-red-fg">docs/index.html</span>
+	<span class="ansi-red-fg">docs/loss.html</span>
+	<span class="ansi-red-fg">docs/model.html</span>
+	<span class="ansi-red-fg">docs/train.html</span>
+	<span class="ansi-red-fg">export.pkl</span>
+	<span class="ansi-red-fg">images/</span>
+	<span class="ansi-red-fg">sdt/</span>
+
+no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;)
+</pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add *.ipynb README.md docs/ <span class="p">;</span> git config --global user.email <span class="s1">&#39;abhicoders@gmail.com&#39;</span><span class="p">;</span> git config --global user.name <span class="s1">&#39;numb3r33&#39;</span><span class="p">;</span> git commit -m <span class="s1">&#39;Split cells.&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>rm exp
+</pre></div>
+
+    </div>
 </div>
 </div>
 
