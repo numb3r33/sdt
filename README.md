@@ -2,6 +2,11 @@
 
 
 
+This package is an implementation of the paper [Distilling a Neural Network Into a Soft Decision
+Tree](https://arxiv.org/pdf/1711.09784.pdf) by Nicholas Frosst, Geoffrey Hinton.
+
+
+
 **Abstract**
 Deep neural networks have proved to be a very effective
 way to perform classification tasks. But it is hard to explain why a learned network makes
