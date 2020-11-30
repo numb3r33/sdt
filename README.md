@@ -67,3 +67,5 @@ learn.fit_one_cycle(n_epoch=n_epochs)
 ## Learned Filters
 
 ![learned_filters](images/learned_filters.png)
+
+This is a visualization of a soft decision tree of depth 4 trained on MNIST. The images at the inner nodes are the learned filters.
